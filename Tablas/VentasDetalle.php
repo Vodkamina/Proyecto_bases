@@ -37,8 +37,8 @@ $ventas_detalle=$resultado->fetchAll(PDO::FETCH_ASSOC);
   </head>
 
   <body>
-  <nav class="navbar navbar-light" id="navbar">
-        <a class="navbar-brand" href="#">Inicio</a>
+  <nav class="navbar navbar-dark" id="navbar">
+        <a class="navbar-brand" href="../index.php">Inicio</a>
         <a class="navbar-brand navbar-left" href="#">Login</a>
 
     </nav>
@@ -61,7 +61,7 @@ $ventas_detalle=$resultado->fetchAll(PDO::FETCH_ASSOC);
                             <?php
                                 foreach($ventas_detalle as $detalle){
                             ?>
-                            <tr>
+                            <tr class="text-center">
                                 <td><?php echo $detalle['codigo_venta']?></td>
                                 <td><?php echo $detalle['cantidad']?></td>
                                 <td><?php echo $detalle['codigo_producto']?></td>
