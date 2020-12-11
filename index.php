@@ -34,8 +34,8 @@ exit();
         }
     </script>
 
-<body >
-    <nav class="navbar navbar-light" id="navbar">
+<body id="body">
+    <nav class="navbar navbar-dark" id="navbar">
         <a class="navbar-brand" href="">Inicio</a>
         <a class="navbar-brand" href="">Clientes</a>
         <a class="navbar-brand" href="">Productos</a>
@@ -45,7 +45,7 @@ exit();
         <a class="navbar-brand navbar-left" href="#">Login</a>
 
     </nav>
-    <div class="group" >
+    <div class="group" id="group" >
         <div class="jumbotron jumbotron-fluid text-center" id="jumbo">
             <div class="container">
               <h1 class="display-4">Bienvenido a GBD</h1>
@@ -53,12 +53,12 @@ exit();
             </div>
           </div>
 
-        <h1 id="texto"><em>Base de datos de la empresa</em></h1>
+        <center><h1 id="texto"><em>Base de datos de la empresa</em></h1></center>
         <div class="accordion" id="accordionExample" style='padding-left: 15%; padding-right: 15%'>
-            <div class="card ">
+            <div class="card" id="card">
                 <div class="card-header " id="headingOne">
                     <h2 class="mb-0">
-                        <button id="BotonActivar" class="btn btn-primary btn-block text-center text-white" type="button" data-toggle="collapse"
+                        <button id="BotonActivar" class="btn btn-light btn-block text-center text-dark" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Consultas a la Base de Datos
                         </button>
@@ -212,10 +212,10 @@ exit();
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-primary btn-block text-center text-white" type="button" data-toggle="collapse"
+                        <button class="btn btn-light btn-block text-center text-dark" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             Modificar Base de datos
                         </button>
